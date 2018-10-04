@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
     ProgressBar progressBar;
     EditText editTextEmail, editTextPassword;
+    ImageView closeSignup;
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +27,21 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_sign_up);
 
         editTextEmail = findViewById(R.id.editTextEmail);
-        editTextPassword = findViewById((R.id.editTextPassword);
+        editTextPassword = findViewById(R.id.editTextPassword);
         progressBar = findViewById(R.id.progressBar);
+
+        closeSignup = findViewById(R.id.closeSignup);
+        closeSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SignUpActivity.super.onBackPressed();
+            }
+        });
 
         mAuth = FirebaseAuth.getInstance();
 
         findViewById(R.id.SignupBtn).setOnClickListener(this);
+        findViewById(R.id.loginText).setOnClickListener(this);
     }
 
     private void registerUser(){

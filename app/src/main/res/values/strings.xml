@@ -12,5 +12,6 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="imnew">Create An Account</string>
     <string name="loginText">Do you have an account?</string>
-    <string name="email">Email</string>
+    <string name="archary">Archary</string>
+    <string name="dashboard">Dashboard</string>
 </resources>
