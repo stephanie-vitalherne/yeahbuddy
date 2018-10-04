@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cornerz</string>
+    <string name="terms">Terms &amp; Conditions | VitalWorx \u00A9 2018</string>
+    <string name="use">or use</string>
+    <string name="join">JOIN</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="account">CREATE ACCOUNT</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="imnew">Create An Account</string>
+    <string name="loginText">Do you have an account?</string>
+    <string name="email">Email</string>
+</resources>
